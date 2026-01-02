@@ -1,0 +1,35 @@
+.cl-board {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	gap:8px;
+	width:fit-content;
+	padding: 16px;
+	background-color:#ecf5ff;
+}
+.cl-line {
+	display:inline-flex;
+	flex-direction:row;
+	width:fit-content;
+	gap:8px;
+}
+.cl-tile {
+	display:inline-block;
+	border: 1px solid #000;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 26px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	vertical-align:middle;
+}
+.cl-gray {
+	background-color: #bbbbbb;
+}
+.cl-yellow {
+	background-color: #bbbb00;
+}
+.cl-green {
+	background-color: #00bb00;
+}

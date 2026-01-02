@@ -1,0 +1,81 @@
+.cl-game-area {
+	display:flex;
+	flex-direction:row;
+	width:fit-content;
+	background-color:#0000003b;
+	padding:40px;
+	border-radius:25px;
+	border: 1px solid #0c1e36;
+}
+.cl-game-area-grid {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2px;
+	border-radius: 25px;
+	border: 1px solid #0c1e36;
+	padding:20px;
+}
+.cl-game-status {
+	display:flex;
+	flex-direction:column;
+	width:115px;
+}
+.cl-game-status-about {
+	color:#d9edff;
+	font-size:12px;
+}
+.cl-game-status-about ul {
+	margin:50px 0 0 0;
+}
+.cl-game-board {
+	width:100%;
+	background-color:#000000dd;
+	justify-items:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border-radius:15px;
+}
+.cl-game-board > div:first-child {
+	font-size:18px;
+}
+.cl-1s2 {
+	grid-column: 1 / span 2;
+}
+.cl-game-name {
+	color:#749dff;
+	text-align:right;
+	padding-right:5px;
+}
+.cl-stat-div {
+	display:inline-flex;
+	flex-direction:row;
+	background-color:#000000;
+	border-top:1px solid #0c1e36;
+	padding-right:5px;
+	justify-content:space-between;
+	color:#fff;
+	font-size:12px;
+}
+.cl-stat-lbl {
+	width:50%;
+	text-align:right;
+
+}
+.cl-stat-win {
+	color:#00ff00;
+}
+.cl-stat-lose {
+	color:#ff0000;
+}
+.cl-game-about {
+	color:#d9edff;
+	font-size:12px;
+	width:274px;
+}
+.cl-game-about ul {
+	margin:0;
+	padding:5px 20px 5px 25px;
+	box-sizing:border-box;
+	width:274px;
+}

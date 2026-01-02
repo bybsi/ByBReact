@@ -1,0 +1,26 @@
+.cl-ttn-board {
+	background-color:#ecf5ff;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:5px;
+	width:fit-content;
+	padding:5px;
+}
+.cl-ttn-letter {
+	font-size:35px;
+	text-transform:uppercase;
+	border: 1px solid black;
+	width:75px;
+	height:75px;
+	text-align:center;
+	align-content:center;
+}
+.cl-ttn-letter:nth-child(1) { border-top: 0; border-left: 0; }
+.cl-ttn-letter:nth-child(2) { border-top: 0; }
+.cl-ttn-letter:nth-child(3) { border-top: 0; border-right: 0; }
+.cl-ttn-letter:nth-child(4) { border-left: 0; }
+.cl-ttn-letter:nth-child(5) {}
+.cl-ttn-letter:nth-child(6) { border-right: 0; }
+.cl-ttn-letter:nth-child(7) { border-left: 0; border-bottom: 0; }
+.cl-ttn-letter:nth-child(8) { border-bottom: 0; }
+.cl-ttn-letter:nth-child(9) { border-bottom: 0; border-right: 0; }

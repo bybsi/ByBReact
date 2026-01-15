@@ -1,25 +1,4 @@
-/*
-TODO:
-	Use a tree structure.
 
-	1   2   3
-	4   5   6
-	7   8   9
-
-	1->right = 2     5->right = 6     3->diag  = 5
-	1->down  = 4     5->down  = 8     3->down  = 6
-	1->diag  = 5     5->diag  = 9     3->right = null
-
-	node {
-		length_O;
-		length_X;
-		right;
-		down;
-		diag;
-		player_ch; // ('O'||'X')
-	}
-
-*/
 import './TicTacNo.scss';
 import { useState, useRef, useCallback, useEffect } from 'react';
 

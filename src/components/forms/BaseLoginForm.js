@@ -50,7 +50,7 @@ export function BaseLoginForm() {
 		setModalTitle(action[ACTION_TITLE] ?? action[ACTION_LABEL]);
 		switch (action[ACTION_ID]) {
 			case 'register':
-				setModalButtonsFlag(prev => (modalVars.BUTTON_SAVE & modalVars.BUTTON_REGISTER));
+				setModalButtonsFlag(modalVars.BUTTON_SAVE & modalVars.BUTTON_REGISTER);
 				setModalComponent(<RegisterForm 
 					updateParentState={setRegisterData} 
 					initialState={registerData ? {...registerData} : {
@@ -61,11 +61,11 @@ export function BaseLoginForm() {
 					}}/>);
 				break;
 			case 'help':
-				setModalButtonsFlag(prev => 0);
+				setModalButtonsFlag(0);
 				setModalComponent(<Help section={0}/>);
 				break;
 			case 'signin':
-				setModalButtonsFlag(prev => (modalVars.BUTTON_SIGNON));
+				setModalButtonsFlag(modalVars.BUTTON_SIGNON);
 				setModalComponent(<LoginForm 
 					unRef={usernameRefModal} 
 					pwRef={passwordRefModal} />);

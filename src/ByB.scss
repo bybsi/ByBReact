@@ -73,6 +73,7 @@ iframe {
 	letter-spacing: 2px;
 }
 .byb-header-right {
+	display:flex;
 	position:relative;
 	right:100px;
 }
@@ -128,6 +129,9 @@ iframe {
 	padding-top:5px;
 	@include mx-bot-rad-4;
 	@include mx-top-right-rad-10;
+}
+.signin-button {
+	display:none;
 }
 .byb-button {
 	padding:5px;
@@ -353,4 +357,12 @@ iframe {
 	top:0.5em;
 	font-size:75%;
 	content:'+';
+}
+@media screen and (max-width: 745px) {
+	.signin-button {
+		display:block;
+	}
+	.byb-login-form {
+		display:none;
+	}
 }

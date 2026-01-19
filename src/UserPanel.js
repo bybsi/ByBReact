@@ -1,4 +1,4 @@
-import { LoginForm } from './components/forms/LoginForm';
+import { BaseLoginForm } from './components/forms/BaseLoginForm';
 import { UserDisplay } from './UserDisplay';
 import { useAuth } from './hooks/AuthContext';
 
@@ -7,7 +7,7 @@ export function UserPanel() {
 
 	return (
 		<div className="byb-header-right">
-			{isAuthenticated ? <UserDisplay /> : <LoginForm />}
+			{isAuthenticated ? <UserDisplay /> : <BaseLoginForm />}
 		</div>
 	);
 }
